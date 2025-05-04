@@ -1,13 +1,21 @@
 public class WordPair {
-    /** Constructs a WordPair object. */
+    private String firstWord;
+    private String secondWord;
     public WordPair(String first, String second) {
-        /* implementation not shown */ }
+        firstWord = first;
+        secondWord = second;
+    }
 
     /** Returns the first string of this WordPair object. */
     public String getFirst() {
-        /* implementation not shown */ }
+        return firstWord;
+        }
 
     /** Returns the second string of this WordPair object. */
     public String getSecond() {
-        /* implementation not shown */ }
+        return secondWord; }
+
+    public String toString(){
+        return "(\"" + firstWord + "\", \"" + secondWord + "\")";
+    }
 }
